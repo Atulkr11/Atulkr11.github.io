@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Example</title>
+
+<style>
+    .maincontainer{
+        border:.5em solid black;
+        display: flex;
+        height:95vh;
+        gap:.5em;
+        align-items:start;
+        background-color: aqua;
+        justify-content: space-around;
+    }
+    .subcontainer{
+        border: .5em solid red;
+        height: 20vh;
+        width:20%;
+    }
+    .subcontainer:nth-child(3){
+        align-self:flex-end;
+
+    }
+
+</style>
+</head>
+<body>
+   <div class="maincontainer">
+    <div class="subcontainer">
+        <h1>First</h1>
+        </div>
+<div class="subcontainer">
+    <h1>Second</h1>
+</div>
+<div class="subcontainer">
+    <h1>Third</h1>
+</div>
+<div class="subcontainer">
+    <h1>Forth</h1>
+</div>
+<div class="subcontainer">
+    <h1>Fifth</h1>
+</div>
+</div>
+</body>
+</html>
