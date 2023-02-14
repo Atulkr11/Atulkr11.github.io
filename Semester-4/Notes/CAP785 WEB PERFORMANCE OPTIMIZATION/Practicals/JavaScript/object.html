@@ -1,0 +1,23 @@
+<script> 
+//By creating instance of Object 
+var emp=new Object();  
+emp.id=101;  
+emp.name="Ravi Malik";  
+emp.salary=50000;  
+document.write(emp.id+" "+emp.name+" "+emp.salary);  
+</script> 
+
+<script>  
+/*By using an Object constructor
+Here, you need to create function with arguments. Each argument
+ value can be assigned in the current object by using this keyword. 
+ */
+    function emp(id,name,salary){  
+    this.id=id;  
+    this.name=name;  
+    this.salary=salary;  
+    }  
+    e=new emp(103,"Vimal Jaiswal",30000);  
+      
+    document.write(e.id+" "+e.name+" "+e.salary);  
+    </script>  

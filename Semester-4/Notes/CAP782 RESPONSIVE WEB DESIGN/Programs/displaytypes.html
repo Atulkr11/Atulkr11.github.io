@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Display Types Example</title>
+    <style>
+        .maincontainer{
+            border: .5em blue solid;
+        }
+        .container1, .container2, .container3, .container4{
+            border: .25em red solid;
+            margin-bottom: .5em;
+        }
+        .container1 h1{
+            display: block;
+            height:200px;
+            width:200px;
+            border: .25em red double;
+        }
+
+        .container2 h1{
+            display: inline;
+            height: 200px;
+            width: 200px;
+            border: .25em green double;
+        }
+        .container3 h1{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            border: .25em brown double;
+        }
+        .container4 h1{
+            display: none;
+            height: 100px;
+            width: 100px;
+            border: .25em yellow double;
+        }
+    </style>
+</head>
+<body>
+<div class="maincontainer">
+    <div class="container1">
+        <h1>Hello Students</h1>
+        <h1>This is another text</h1>
+    </div>
+    <div class="container2">
+        <h1>Hello Students</h1>
+        <h1>This is another text</h1>
+    </div>
+    <div class="container3">
+        <h1>Hello Students</h1>
+        <h1>This is another text</h1>
+    </div>
+    <div class="container4">
+        <h1>Hello Students</h1>
+        <h1>This is another text</h1>
+    </div>
+</div>
+
+</body>
+</html>
