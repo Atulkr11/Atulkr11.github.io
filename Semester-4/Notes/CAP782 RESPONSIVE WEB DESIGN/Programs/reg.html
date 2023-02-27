@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+
+		form {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			padding: 20px;
+			margin: 20px auto;
+			width: 400px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 0;
+		}
+
+		input[type="text"], input[type="password"], select {
+			display: block;
+			margin: 10px 0;
+			padding: 10px;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			box-sizing: border-box;
+		}
+
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		button[type="submit"]:hover {
+			background-color: #45a049;
+		}
+
+		.error {
+			color: red;
+			margin: 5px 0;
+		}
+	</style>
+</head>
+<body>
+	<form action="kgslogin.html" method="post">
+		<h1>Registration</h1>
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+		<label for="email">Email:</label>
+		<input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+		<label for="confirm-password">Confirm Password:</label>
+		<input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">Select your gender</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+
+		<label for="age">Age:</label>
+		<input type="text" id="age" name="age" placeholder="Enter your age" required>
+
+		<button type="submit">Register</button>
+	</form>
+</body>
+</html>

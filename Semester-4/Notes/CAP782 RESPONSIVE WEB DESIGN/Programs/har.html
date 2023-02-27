@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <style>
+        .menu{
+            background-color: aqua;
+            height: 3em;
+            width:98vw;
+            overflow: hidden;
+            position: sticky;
+            top:0px;
+        }
+        .menu #logoicon{
+            font-size: .5in;
+            height: 1em;
+            float:left;
+            display: inline;
+        }
+        #resmenu, #bars, #times{
+            margin-top: 1em;
+            margin-right: .5em;
+            float:right;
+            display: none;
+        }
+        .menu ul li{
+            display: inline;   
+            font-size: 1em;
+            text-decoration: none;
+            float: right;
+            margin: .1em .5em;
+        }
+        a, a:hover, a:active, a:visited{
+            text-decoration: none;
+            color: red;
+        }
+        @media screen and (max-width:768px){
+            #bars{
+                display: block;
+            }
+            .menu ul{
+                margin-top: 3em;
+                text-align:center;
+                position: fixed;
+                right:100%;
+            }
+            .menu ul li{
+                display: block;
+                background-color: aquamarine;
+                width:100vw;
+                text-decoration: underline;
+            }
+            #resmenu:checked ~ul{
+                margin-right:-100%;
+            }
+            #resmenu:checked ~label #bars{
+                display:none
+            }
+            #resmenu:checked ~label #times{
+                display:block
+            }
+           
+        }
+    </style>
+</head>
+    <nav class="menu">
+        <input type="checkbox" name="resmenu" id="resmenu">
+        <label for="resmenu">
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-circle-xmark" id="times"></i>
+        </label>    
+            <div class="logo">
+                <a href="https://news.google.com">
+                    <i class="fa-brands fa-angrycreative" id="logoicon"></i>
+                </a>
+            </div>
+            <ul>
+                <li><a href="https:www.amazon.in"><i class="fa-brands fa-amazon"></i> Amazon</a></li>
+                <li><a href="https://www.apple.com/in/"><i class="fa-brands fa-apple"></i>Apple</a></li>
+                <li><a href="https://www.airbnb.co.in"><i class="fa-brands fa-airbnb"></i>Airbnb</a></li>
+                <li><a href="https://www.accusoft.com"><i class="fa-brands fa-accusoft"></i>AccuSoft</a></li>
+            </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Define the animation */
+    @keyframes blink {
+      0% { visibility: visible; }
+      50% { visibility: hidden; }
+      100% { visibility: visible; }
+    }
+
+    /* Apply the animation to the text */
+    .blink {
+      animation: blink 1s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <p><span class="blink">Blinking text</span></p>
+</body>
+</html>
