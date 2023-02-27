@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .container {
+            display: grid;
+            width: 100%;
+            /*width: clamp(100px, 40%, 300px);*/
+            height: 95vh;
+            border: .25em solid black;
+            margin: 0 auto;
+            gap: 15px 15px;
+            grid-template-areas: 'head head head head head head'
+                'side main main main main side2'
+                'last last last last last last'
+        }
+
+        article,
+        header,
+        aside {
+            border: .25em solid red;
+            text-align: center;
+        }
+
+
+        header {
+            grid-area: head;
+            background: linear-gradient(to right, orange 0 33%,white 33% 66%, green 66% 100%);
+        }
+
+        aside {
+            grid-area: side;
+            text-align: justify;
+            overflow-y: auto;
+            padding: 0 5px 0 5px;
+            background: linear-gradient(orange, white, green);
+        }
+
+        article {
+            grid-area: main;
+            /*overflow-y: auto;*/
+            text-align:justify;
+            background: conic-gradient(orange 0 33%,white 33% 66%, green 66% 100%);
+            padding: 0 5px 0 5px;
+        }
+
+        img{
+            width: 100%;
+            height:auto;
+        }
+
+        .side2 {
+            grid-area: side2;
+            text-align: justify;
+            border: .25em red solid;
+            overflow-y: auto;
+            padding: 0 5px 0 5px;
+            background: linear-gradient(orange, white, green);
+        }
+
+        blink {
+            color: #2d38be;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        
+
+        .footer {
+            background: linear-gradient(to right, orange 0 33%,white 33% 66%, green 66% 100%);
+            grid-area: last;
+            text-align: center;
+        }
+
+        @media screen and (min-width: 220px) {
+            body {
+                background-color: skyblue;
+            }
+        }
+
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: red;
+            }
+        }
+
+        @media screen and (min-width: 560px) {
+            body {
+                background-color: blue;
+            }
+        }
+
+        @media screen and (min-width: 780px) {
+            body {
+                background-color: white;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="gridwithmenu.html">
+                <button class="block">Home</button>
+            </a>
+            <a href="imageresponsive.html">
+                <button class="block">Gallery</button>
+            </a>
+            <a href="grid.html">
+                <button class="block">About</button>
+            </a>
+            <a href="grid.html">
+                <button class="block">Contact Us</button>
+            </a>
+        </header>
+
+        <aside>
+            Images can quickly catch our attention, and we are attracted to them instantly. For instance, think about this website
+
+        </aside>
+
+        <article>
+            <img src="shiva.jpg">
+        </article>
+
+        <div class="side2">
+            <blink>Announcement</blink>
+
+        </div>
+            <div class="footer"> Copyright &#169;
+                <a href="kgs.html">KGN</a> 2022
+            </div>
+        </footer>
+</body>
+
+</html>
