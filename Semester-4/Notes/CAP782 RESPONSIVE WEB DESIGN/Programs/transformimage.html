@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 1.25rem;
+            background-color: #b6b6b6;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+        figure{
+            background-color: #fff;
+            border: 12px solid #fff;
+            border-radius: 5%;
+            box-shadow: 5px 5px 10px rgba(0,0,0, 0.6);
+            position: relative;
+            top: 200px;
+        }
+        figcaption{
+            text-align: center;
+        }
+        figure img{
+            height: 200px;
+            width: 200px;
+        }
+        figure:nth-child(1){
+            transform: rotate(20deg);
+        }
+        figure:nth-child(2){
+            transform: translateY(-100px);
+        }
+        figure:nth-child(3){
+            transform: scale(.8);
+        }
+        figure:nth-child(4){
+            transform: skew(10deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <figure>
+            <img src="https://unsplash.it/200/300" alt=" first image">
+            <figcaption> First image</figcaption>
+        </figure>
+        <figure>
+            <img src="https://unsplash.it/300/300" alt=" second image">
+            <figcaption> Second image</figcaption>
+        </figure>
+        <figure>
+            <img src="https://unsplash.it/200/200" alt="Third image">
+            <figcaption>Third image</figcaption>
+        </figure>
+        <figure>
+            <img src="https://unsplash.it/400/300" alt=" Fourth image">
+            <figcaption>Fourth image</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
